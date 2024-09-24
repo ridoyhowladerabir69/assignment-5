@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6327fc2102.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="mb-5 overflow-hidden">
+        <nav class="flex justify-between mx-auto py-4 px-5 md:px-20 bg-orange-50 fixed top-0 left-0 right-0 mb-5">
+            <div>
+                <button id="blog-btn"" class="btn bg-lime-400 text-lg">Blog</button>
+                <button id="home-btn"" class="hidden btn bg-lime-400 text-lg">Home</button>
+            </div>
+            <div class="flex invisible md:visible lg:visible">
+                <img class="w-10 h-auto" src="./assets/logo.png" alt="">
+                <h2 class="my-auto ml-2 text-2xl font-bold">Donate Bangladesh</h2>
+            </div>
+            <div>
+                <h3 class=""><i class="fa-solid fa-dollar-sign text-white text-3xl mx-2 rounded-full px-2 bg-orange-300"></i><span id="main-balance" class="text-2xl font-semibold mr-1 text-gray-600 my-auto">5500</span><span class="text-xl font-bold text-gray-600">BDT</span></h3>
+            </div>
+        </nav>
+        <div class="bg-gray-50 py-4 fixed top-24 lg:top-20 left-0 right-0 top-0">
+            <div id="header-btn" class="flex justify-center gap-x-5">
+                <button id="btn1" class="btn text-lg bg-lime-400 hover:bg-lime-200 active:bg-lime-600">Donation</button>
+                <button id="btn2" class="btn text-lg hover:bg-lime-200 active:bg-lime-600">History</button>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="mx-auto py-4 px-5 md:px-20 overflow-hidden">
+        <section class="border rounded-lg mt-40">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-2 p-5">
+                <div>
+                    <img class="w-full md:w-[660px] md:h-96"  src="./assets/noakhali.png" alt="">
+                </div>
+                <div class="">
+                    <div class="">
+                        <h4 class=""><i class="fa-solid fa-dollar-sign text-white text-lg mr-2 rounded-full px-2 bg-orange-300"></i><span id="donate-balance1" class="text-lg font-semibold mr-1">0</span><span class="text-lg font-bold text-gray-600">BDT</span></h4>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mt-5">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-base text-gray-500 mt-5"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. <br> Your donation will help provide essential supplies and to those affected by this <br> disaster. Every contribution, big or small, makes difference. Please join us in <br> supporting the relief efforts and making a positive impact on the lives of <br> those in need.</p>
+                        <input id="noakhali-donate" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-8" required />
+                        <button id="donate-btn1" class="btn btn-wide w-full mt-5 text-lg hover:bg-lime-400 active:bg-lime-400 focus:bg-lime-400">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-2 -->
+        <section class="border rounded-lg mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-2 p-5">
+                <div>
+                    <img class="md:w-[660px] h-96"  src="./assets/feni.png" alt="">
+                </div>
+                <div class="">
+                    <div class="">
+                        <h4 class=""><i class="fa-solid fa-dollar-sign text-white text-lg mr-2 rounded-full px-2 bg-orange-300"></i><span id="donate-balance" class="text-lg font-semibold mr-1">600</span><span class="text-lg font-bold text-gray-600">BDT</span></h4>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mt-5">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p class="text-base text-gray-500 mt-5"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. <br> Your donation will help provide essential supplies and to those affected by this <br> disaster. Every contribution, big or small, makes difference. Please join us in <br> supporting the relief efforts and making a positive impact on the lives of <br> those in need.</p>
+                        <input id="feni-donate" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-8" required />
+                        <button id="donate-btn2" class="btn btn-wide w-full mt-5 text-lg hover:bg-lime-400 active:bg-lime-400 focus:bg-lime-400">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-3 -->
+        <section class="border rounded-lg mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-2 p-5">
+                <div>
+                    <img class="md:w-[660px] h-96"  src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="">
+                    <div class="">
+                        <h4 class=""><i class="fa-solid fa-dollar-sign text-white text-lg mr-2 rounded-full px-2 bg-orange-300"></i><span id="donate-balance" class="text-lg font-semibold mr-1">2400</span><span class="text-lg font-bold text-gray-600">BDT</span></h4>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mt-5">Aid for Injured in the Quota Movement</h2>
+                        <p class="text-base text-gray-500 mt-5"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. <br> Your donation will help provide essential supplies and to those affected by this <br> disaster. Every contribution, big or small, makes difference. Please join us in <br> supporting the relief efforts and making a positive impact on the lives of <br> those in need.</p>
+                        <input id="quota-donate" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-8" required />
+                        <button id="donate-btn3" class="btn btn-wide w-full mt-5 text-lg hover:bg-lime-400 active:bg-lime-400 focus:bg-lime-400">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- History Section -->
+    <main id="history-container" class="hidden md:mt-40 mx-auto py-4 px-5 md:px-20 overflow-hidden">
+
+    </main>
+     <!-- blog section -->
+    <main id="faq" class="hidden mx-auto py-4 px-5 md:px-20 overflow-hidden md:mt-32">
+        <section class="">
+            <h1 class="text-4xl font-bold">Important FAQ?</h1>
+            <div class="collapse collapse-arrow border mt-5">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the document object model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The DOM is a tree-like representation of an HTML or XML document, allowing JavaScript to dynamically access, modify, and interact with elements and content. It enables real-time updates to a webpage's structure and style.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the Dom?</div>
+                <div class="collapse-content">
+                  <p>You can select an element from the DOM using methods like document.getElementById("id") or document.querySelector(".class") for IDs and classes, respectively.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the Dom, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation allows a single parent element to handle events for its child elements by taking advantage of event bubbling, making it more efficient for managing dynamic content or multiple similar elements.</p>
+                </div>
+                <div class="collapse collapse-arrow border">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the Dom?</div>
+                    <div class="collapse-content">
+                      <p>You can manipulate an element's attributes using element.setAttribute() or element.removeAttribute(), and update styles directly via element.style.property = "value".</p>
+                    </div>
+              </div>
+        </section>
+    </main>
+    <!-- javascript -->
+    <script src="./js/donete.js"></script>
+    <script src="./js/library.js"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/history.js"></script>
+</body>
+</html>
+
+<!-- <div class="relative z-40 flex justify-center items-center flex-col mt-56 bg-white p-5 w-96 mx-auto rounded-lg">
+    <div class="text-center">
+        <h1 class="mb-4 text-3xl font-bold">Congrats!</h1>
+        <h2 class="mb-2"><i class="fa-solid fa-dollar-sign text-white text-3xl mx-2 rounded-full px-2 bg-orange-300"></i></h2>
+        <p class="text-base mb-2 text-gray-500">You Have Donated for Humankind</p>
+        <h3 class="text-xl font-semibold mb-2">Successfully</h3>
+        <button class="btn text-lg">close confirmation</button>
+    </div>
+</div> -->

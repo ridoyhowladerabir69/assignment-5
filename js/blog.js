@@ -1,0 +1,30 @@
+document.getElementById('blog-btn')
+    .addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('faq')
+            .classList.remove('hidden')
+        document.getElementById('main')
+            .classList.add('hidden')
+        document.getElementById('header-btn')
+            .classList.add('hidden')
+            document.getElementById('home-btn')
+            .classList.remove('hidden')
+            document.getElementById('blog-btn')
+                .classList.add('hidden')
+        
+    })
+
+document.getElementById('home-btn')
+    .addEventListener('click', function(event){
+        event.preventDefault()
+        document.getElementById('faq')
+            .classList.add('hidden')
+        document.getElementById('main')
+            .classList.remove('hidden')
+        document.getElementById('header-btn')
+            .classList.remove('hidden')
+            document.getElementById('home-btn')
+            .classList.add('hidden')
+            document.getElementById('blog-btn')
+                .classList.remove('hidden')
+    })
